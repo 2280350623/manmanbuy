@@ -1,0 +1,159 @@
+/* 总标题 */
+.all_nav {
+  height: 1.013333rem /* 76/75 */;
+  border-top: 0.026667rem /* 2/75 */ solid #e8e8e8;
+  border-bottom: 0.026667rem /* 2/75 */ solid #cecece;
+  background: linear-gradient(#fff, #e3e3e3);
+  box-sizing: border-box;
+  font-size: 0.293333rem /* 22/75 */;
+  font-weight: bold;
+  color: #000;
+  line-height: 0.96rem /* 72/75 */;
+  padding-left: 0.24rem /* 18/75 */;
+  margin-bottom: 0.266667rem /* 20/75 */;
+}
+/* 热门品牌排行 */
+.ph {
+  margin: 0 auto 0.266667rem /* 20/75 */;
+  width: 9.733333rem /* 730/75 */;
+  height: 1.066667rem /* 80/75 */;
+  border: 0.026667rem /* 2/75 */ solid #cecece;
+  line-height: 1.013333rem /* 76/75 */;
+  font-size: 0.4rem /* 30/75 */;
+  font-weight: bold;
+  color: #854316;
+  padding-left: 0.266667rem /* 20/75 */;
+  box-sizing: border-box;
+  background: #eeeeee;
+}
+/* 小标题 */
+.lit_nav,
+.xlph,
+.speak {
+  height: 1.013333rem /* 76/75 */;
+  border-top: 0.026667rem /* 2/75 */ solid #bcbcbc;
+  border-bottom: 0.026667rem /* 2/75 */ solid #c2c2c2;
+  box-sizing: border-box;
+  background: #f3f3f3;
+  padding-left: 0.266667rem /* 20/75 */;
+  font-size: 0.32rem /* 24/75 */;
+  color: #864412;
+  font-weight: bold;
+  line-height: 0.96rem /* 72/75 */;
+}
+/* 内容 */
+.brand_cont {
+  margin-bottom: 0.666667rem /* 50/75 */;
+  /* 品牌排行 */
+  /* 销量排行 */
+}
+.brand_cont ul.list li {
+  display: block;
+  height: 1.76rem /* 132/75 */;
+  border-bottom: 0.026667rem /* 2/75 */ solid #e6e6e6;
+}
+.brand_cont ul.list li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.brand_cont ul.list li a .pic {
+  position: absolute;
+  top: 0.266667rem /* 20/75 */;
+  left: 0.266667rem /* 20/75 */;
+  width: 0.533333rem /* 40/75 */;
+  height: 0.533333rem /* 40/75 */;
+  background: #c9c9c9;
+  border: 0.026667rem /* 2/75 */ solid #b9b9b9;
+  text-align: center;
+  line-height: 0.48rem /* 36/75 */;
+  color: #fff;
+  font-size: 0.266667rem /* 20/75 */;
+  box-sizing: border-box;
+}
+.brand_cont ul.list li a .name,
+.brand_cont ul.list li a .info {
+  position: absolute;
+  top: 0.4rem /* 30/75 */;
+  left: 1.066667rem /* 80/75 */;
+  font-size: 0.32rem /* 24/75 */;
+  font-weight: bold;
+  color: #000;
+}
+.brand_cont ul.list li a .info {
+  top: 1.066667rem /* 80/75 */;
+  color: #878481;
+  font-weight: normal;
+}
+.brand_cont ul.list li a span:last-child {
+  position: absolute;
+  right: 0.133333rem /* 10/75 */;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.666667rem /* 50/75 */;
+}
+.brand_cont ul.list li:first-child a .pic {
+  background: #f10e0e;
+  border: 0.026667rem /* 2/75 */ solid #ed0101;
+}
+.brand_cont ul.list li:nth-child(2) a .pic {
+  background: #ff9410;
+  border: 0.026667rem /* 2/75 */ solid #ff7800;
+}
+.brand_cont ul.list li:nth-child(3) a .pic {
+  background: #8adf5b;
+  border: 0.026667rem /* 2/75 */ solid #6ad72f;
+}
+.brand_cont ul.products {
+  display: flex;
+  flex-direction: column;
+}
+.brand_cont ul.products li a {
+  flex: 1;
+  width: 100%;
+  height: 3.466667rem /* 260/75 */;
+  border-bottom: 0.026667rem /* 2/75 */ solid #e7e7e7;
+  padding: 0.4rem /* 30/75 */ 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+.brand_cont ul.products li a .left {
+  flex: 1;
+  text-align: center;
+}
+.brand_cont ul.products li a .left img {
+  width: 80%;
+  height: 100%;
+}
+.brand_cont ul.products li a .right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.brand_cont ul.products li a .right p:first-child {
+  flex: 2;
+}
+.brand_cont ul.products li a .right p:first-child .name {
+  line-height: 0.506667rem /* 38/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+}
+.brand_cont ul.products li a .right p:nth-child(2) {
+  flex: 2;
+}
+.brand_cont ul.products li a .right p:nth-child(2) .price {
+  display: block;
+  padding-top: 0.4rem /* 30/75 */;
+  height: 0.666667rem /* 50/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+  color: #ff650e;
+  box-sizing: border-box;
+}
+.brand_cont ul.products li a .right p:last-child {
+  flex: 1;
+  color: #a7a2a6;
+  font-size: 0.293333rem /* 22/75 */;
+  padding-right: 0.2rem /* 15/75 */;
+  box-sizing: border-box;
+}

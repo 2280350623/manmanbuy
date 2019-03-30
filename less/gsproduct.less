@@ -1,0 +1,159 @@
+.title {
+    position: relative;
+    width: 100%;
+    height: 1.2rem /* 90/75 */;
+    background-image: linear-gradient(#ffaf47,#ff9000);
+    text-align: right;
+    padding: .146667rem /* 11/75 */ .213333rem /* 16/75 */;
+    box-sizing: border-box;
+    a.fa {
+        position: absolute;
+        top: .266667rem /* 20/75 */;
+        left: .266667rem /* 20/75 */;
+        font-size: .666667rem /* 50/75 */;
+    }
+    h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: .506667rem /* 38/75 */;
+        font-weight: bold;
+    }
+    a.bg img {
+        position: absolute;
+        top: 50%;
+        right: .133333rem /* 10/75 */;
+        transform: translateY(-50%);
+        width: .933333rem /* 70/75 */;
+        height: .933333rem /* 70/75 */;
+    }
+}
+
+/* 导航 */
+.gs_nav {
+    position: relative;
+    height: 1.013333rem /* 76/75 */;
+    border-bottom: .026667rem /* 2/75 */ solid #dddddd;
+    padding-right: 1.2rem /* 90/75 */;
+    box-sizing: border-box;
+    .shop_btn,.area_btn{
+        position: relative;
+        height: 100%;
+        width: 2.666667rem /* 200/75 */;
+        background-color: #fff;
+        font-size: .4rem /* 30/75 */;
+        color: #000;
+        cursor: pointer;
+    }
+    .all {
+        height: 100%;
+        background-color: #fff;
+        padding: 0 .533333rem /* 40/75 */;
+        font-size: .4rem /* 30/75 */;
+        color: #000;
+        text-align: center;
+        line-height: .986667rem /* 74/75 */;
+        border-right: .026667rem /* 2/75 */ solid #dddddd;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+    .shop,.area {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        display: none;
+        li {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 1.013333rem /* 76/75 */;
+            border-bottom: .026667rem /* 2/75 */ solid #dddddd;
+            border-right: .026667rem /* 2/75 */ solid #dddddd;
+            padding-right: .4rem /* 30/75 */;
+            text-indent: .066667rem /* 5/75 */;
+            background: #fff;
+            z-index: 999;
+            font-size: .28rem /* 21/75 */;
+            text-align: center;
+            line-height: .493333rem /* 37/75 */;
+            box-sizing: border-box;
+            i {
+                position: absolute;
+                top: 50%;
+                right: .026667rem /* 2/75 */;
+                transform: translateY(-50%);
+                width: .4rem /* 30/75 */;
+                height: .4rem /* 30/75 */;
+            }
+        }
+    }
+    .shop {
+        li {
+            font-size: .32rem /* 24/75 */;
+            line-height: .986667rem /* 74/75 */;
+        }
+    }
+}
+
+/* 商品 */
+.gs_main {
+    padding-bottom: .933333rem /* 70/75 */;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    .pro {
+        width: 100%;
+        padding-top: .266667rem /* 20/75 */;
+        box-sizing: border-box;
+        li {
+            position: relative;
+            float: left;
+            width: 47%;
+            height: 6.106667rem /* 458/75 */;
+            margin:0 2% 2%;
+            &:nth-child(2n) {
+                margin-left: 0;
+            }
+            a {
+                width: 100%;;
+                height: 100%;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 4.626667rem /* 347/75 */;
+                }
+                .name {
+                    padding-left: .066667rem /* 5/75 */;
+                    height: .466667rem /* 35/75 */;
+                    line-height: .533333rem /* 40/75 */;
+                    overflow: hidden;
+                    font-size: .346667rem /* 26/75 */;
+                }
+                .price {
+                    position: absolute;
+                    bottom: .4rem /* 30/75 */;
+                    left: .133333rem /* 10/75 */;
+                    font-size: .346667rem /* 26/75 */;
+                    color: #f7672e;
+                }
+                .btn {
+                    position: absolute;
+                    right: .16rem /* 12/75 */;
+                    bottom: .16rem /* 12/75 */;
+                    width: 1.653333rem /* 124/75 */;
+                    height: .746667rem /* 56/75 */;
+                    border: .026667rem /* 2/75 */ solid #ff8400;
+                    border-radius: .08rem /* 6/75 */;
+                    background: #ff9501;
+                    box-sizing: border-box;
+                    font-size: .32rem /* 24/75 */;
+                    font-weight: bold;
+                    color: #fff;
+                    text-align: center;
+                    line-height: .693333rem /* 52/75 */;
+                }
+            }
+        }
+    }
+}

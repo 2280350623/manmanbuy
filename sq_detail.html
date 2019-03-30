@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/sq_detail.css">
+</head>
+
+<body>
+    <div class="m_layout">
+        <!-- 商品栏 -->
+        <div class="content">
+            <div class="title">
+                <a class="fa fa-angle-left" href="javascript:history.go(-1);"></a>
+                <h3>国内折扣</h3>
+                <a href="#" class="bg"><img src="./images/header_app.png" alt=""></a>
+            </div>
+            <ul class="products">
+                <!-- 渲染 -->
+            </ul>
+        </div>
+        <!-- 内容 -->
+        <div class="sq_main clearfix">
+            
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+            <a href="login.html">登录</a>
+            <a href="register">注册</a>
+            <a href="#">返回顶部</a>
+        </div>
+        <div class="friendlink">
+            <a href="#">手机app下载</a>
+            <span>慢慢买手机版</span>
+            <span>--掌上比价平台</span>
+            <a>m.manmanbuy.com</a>
+        </div>
+    </div>
+    <script src="./js/setRem.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./js/sq_detail.js"></script>
+
+    <script type="text/html" id="tpl_1">
+        {{each result v i}}
+            <div class="sq_title">
+                {{v.productName}}
+            </div>
+            <div class="ftt">
+                <span class="from">{{v.productFrom}}</span>
+                <span class="time">{{v.productTime}}</span>
+                <span class="tips">{{v.productTips}}</span>
+            </div>
+            <div class="cont">
+                {{@v.productImgSm}}
+                {{v.productInfo2}}   
+            </div>
+            <div class="big">{{@v.productImg2}}</div>
+            <div>{{@v.productCity}}</div>
+            <div class="buy">
+                <span>前往购买</span>
+            </div>
+            <div class="ewm"><img src="./images/mmbweixin2.png" alt=""></div>
+            <div class="talk">{{@v.productComment}}</div>
+        {{/each}}
+    </script>
+</body>
+
+</html>

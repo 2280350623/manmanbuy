@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+    <div class="m_layout clearfix">
+        <!-- 头部 -->
+        <div class="m_header">
+            <a href="index.html" class="header_logo"></a>
+            <a href="javascript:;" class="header_app"></a>
+        </div>
+        <!-- 搜索栏 -->
+        <div class="search">
+            <input type="search" placeholder="请输入你想比价的商品">
+            <button type="button" class="btn_search">搜索</button>
+        </div>
+        <!-- 面包屑导航 -->
+        <div class="m_bar clearfix">
+            <ul class="nav">
+                <!-- 渲染 -->
+            </ul>
+            <a href="javascript:;" class="btn">筛选</a>
+        </div>
+        <!-- d_main -->
+        <div class="d_main">
+            
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+            <a href="login.html">登录</a>
+            <a href="register">注册</a>
+            <a href="#">返回顶部</a>
+        </div>
+        <div class="friendlink">
+            <a href="#">手机app下载</a>
+            <span>慢慢买手机版</span>
+            <span>--掌上比价平台</span>
+            <a>m.manmanbuy.com</a>
+        </div>
+    </div>
+    <script src="./js/setRem.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./js/detail.js"></script>
+
+    <script type="text/html" id="tpl_1">
+        {{each result v i}}
+            <li><a href="index.html">首页 &gt;</a></li>
+            <li><a href="javascript:history.go(-1);">{{v.category}} &gt;</a></li>
+            <li class="third_menu"><a href="javascript:;">{{name}} &gt;</a></li>
+        {{/each}}
+    </script>
+    
+    <script type="text/html" id="tpl_2">
+        {{each result v i}}
+            <h2>{{v.productName}}</h2>
+            <div class="pic">
+                {{@v.productImg}}
+                <span class="collect">收藏</span>
+            </div>
+            <div class="list">
+                <a href="#">比价购买</a>
+                <a href="#">产品参数</a>
+                <a href="#">{{sp_num}}</a>
+            </div>
+            {{@v.bjShop}}
+            <div class="bz">&nbsp;*&nbsp;实际价格以各网站列出的实施售价为准，我们提供的价格可能有数小时至数日的延迟</div>
+            <div class="title">网友评价</div>
+            <ul class="content">
+                
+            </ul>
+            <div class="t_more">
+                <p>查看更多的评价</p>
+            </div>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="tpl_3">
+        {{each result v i}}
+            <li>
+                <div class="up clearfix">
+                    <span class="name">{{v.comName}}</span>
+                    <span class="date">{{v.comTime}}</span>
+                    <span class="from">{{v.comFrom}}</span>
+                </div>
+                <p class="text">{{v.comContent}}</p>
+            </li>
+        {{/each}}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/brandProducts.css">
+</head>
+
+<body>
+    <div class="m_layout">
+        <!-- 头部 -->
+        <div class="m_header clearfix">
+            <a href="index.html" class="header_logo"></a>
+            <a href="javascript:;" class="header_app"></a>
+        </div>
+        <!-- 搜索栏 -->
+        <div class="search">
+            <input type="search" placeholder="请输入你想比价的商品">
+            <button type="button" class="btn_search">搜索</button>
+        </div>
+        <!-- 总标题 -->
+        <div class="all_nav">
+            <a href="index.html">首页 &gt;</a>
+            <a href="brandTitle.html">全部分类 &gt;</a>
+        </div>
+        <!-- 小标题 -->
+        <div class="lit_nav">平板电视哪个牌子好</div>
+        <!-- 内容 -->
+        <div class="brand_cont">
+            <ul class="list">
+                <!--  渲染 -->
+            </ul>
+            <div class="xlph">平板电视产品销量排行</div>
+            <ul class="products">
+                <!-- 渲染 -->
+            </ul>
+            <!-- <div class="speak">平板电视最新评论</div> -->
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+            <a href="login.html">登录</a>
+            <a href="register">注册</a>
+            <a href="#">返回顶部</a>
+        </div>
+        <div class="friendlink">
+            <a href="#">手机app下载</a>
+            <span>慢慢买手机版</span>
+            <span>--掌上比价平台</span>
+            <a>m.manmanbuy.com</a>
+        </div>
+    </div>
+    <script src="./js/setRem.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./js/brandProducts.js"></script>
+
+    <script type="text/html" id="tpl_1">
+        {{each result v i}}
+            <li>
+                <a href="#">
+                    <span class="pic">{{i+1}}</span>
+                    <p class="name">{{v.brandName}}</p>
+                    <span class="info">{{v.brandInfo}}</span>
+                    <span class="fa fa-angle-right"></span>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="tpl_2">
+        {{each result v i}}
+            <li data-num={{v.productId}} data-id={{v.categoryId}} data-name={{v.productName}}>
+                <a href="#">
+                    <div class="left">
+                        {{@v.productImg}}
+                    </div>
+                    <div class="right">
+                        <p>
+                            <span class="name">{{v.productName}}</span>
+                        </p>
+                        <p>
+                            <span class="price">{{v.productPrice}}</span>
+                        </p>
+                        <p>
+                            <span class="from">{{v.productQuote}}</span>
+                            <span class="time">{{v.productCom}}</span>
+                        </p>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+</body>
+
+</html>

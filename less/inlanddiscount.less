@@ -1,0 +1,86 @@
+.title {
+    position: relative;
+    width: 100%;
+    height: 1.2rem /* 90/75 */;
+    background-image: linear-gradient(#ffaf47,#ff9000);
+    text-align: right;
+    padding: .146667rem /* 11/75 */ .213333rem /* 16/75 */;
+    box-sizing: border-box;
+    a.fa {
+        position: absolute;
+        top: .266667rem /* 20/75 */;
+        left: .266667rem /* 20/75 */;
+        font-size: .666667rem /* 50/75 */;
+    }
+    h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: .506667rem /* 38/75 */;
+        font-weight: bold;
+    }
+    a.bg img {
+        position: absolute;
+        top: 50%;
+        right: .133333rem /* 10/75 */;
+        transform: translateY(-50%);
+        width: .933333rem /* 70/75 */;
+        height: .933333rem /* 70/75 */;
+    }
+}
+
+/* 商品 */
+.in_main {
+    margin-bottom: .933333rem /* 70/75 */;
+    .pro li{
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 7.066667rem /* 530/75 */;
+        border-right: .026667rem /* 2/75 */ solid #efefef;
+        border-bottom: .026667rem /* 2/75 */ solid #efefef;
+        padding: .266667rem /* 20/75 */ .4rem /* 30/75 */ 0 .48rem /* 36/75 */;
+        box-sizing: border-box;
+        &:nth-child(2n) {
+            border-right: none;
+        }
+        &:nth-child(-n+2) {
+            border-top: .026667rem /* 2/75 */ solid #efefef;
+        }
+        a {
+            display: block;
+            margin: 0 auto .2rem /* 15/75 */;
+            width: 3.76rem /* 282/75 */;
+            height: 3.76rem /* 282/75 */;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+        .name {
+            font-size: .32rem /* 24/75 */;
+            color: #000;
+            line-height: .4rem /* 30/75 */;
+            margin-bottom: .066667rem /* 5/75 */;
+        }
+        .price {
+            position: absolute;
+            bottom: .8rem /* 60/75 */;
+            font-size: .293333rem /* 22/75 */;
+            line-height: .32rem /* 24/75 */;
+            color: #ff4f09;
+        }
+        span {
+            position: absolute;
+            bottom: .266667rem /* 20/75 */;
+            font-size: .266667rem /* 20/75 */;
+            color: #8c8589;
+            &:last-child {
+                left: 1.733333rem /* 130/75 */;
+            }
+        }
+    }
+}

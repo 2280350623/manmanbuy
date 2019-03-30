@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/category.css">
+</head>
+
+<body>
+    <div class="m_layout">
+        <!-- 头部 -->
+        <div class="m_header clearfix">
+            <a href="index.html" class="header_logo"></a>
+            <a href="javascript:;" class="header_app"></a>
+        </div>
+        <!-- 搜索栏 -->
+        <div class="search">
+            <input type="search" placeholder="请输入你想比价的商品">
+            <button type="button" class="btn_search">搜索</button>
+        </div>
+        <!-- 商品分类标题 -->
+        <div class="category">
+            <ul class="clearfix">
+                <!-- 渲染 -->
+            </ul>
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+            <a href="login.html">登录</a>
+            <a href="register">注册</a>
+            <a href="#">返回顶部</a>
+        </div>
+        <div class="friendlink">
+            <a href="#">手机app下载</a>
+            <span>慢慢买手机版</span>
+            <span>--掌上比价平台</span>
+            <a>m.manmanbuy.com</a>
+        </div>
+    </div>
+    <script src="./js/setRem.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./js/category.js"></script>
+    
+    <script type="text/html" id="tpl_1">
+        {{each result v i}}
+            <li class='menu' data-id="{{v.titleId}}">
+                <a href="javascript:;">
+                    <span>{{v.title}}</span>
+                    <i class="fa fa-chevron-right btn"></i>
+                </a>
+
+                <ul class="list clearfix">
+                </ul>
+            </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="tpl_2">
+        {{each result v i}}
+            <li>
+                <a href="javascript:;" data-id="{{v.categoryId}}" class="btn">{{v.category}}</a>
+            </li>
+        {{/each}}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+/* 面包屑导航 */
+.m_bar {
+    position: relative;
+    height: 1.066667rem /* 80/75 */;
+    border-top: .026667rem /* 2/75 */ solid #c9c9c9;
+    border-bottom: .026667rem /* 2/75 */ solid #c9c9c9;
+    line-height: 1.04rem /* 78/75 */;
+    background: linear-gradient(#fff,#ddd);
+    text-align: right;
+    box-sizing: border-box;
+    &>ul {
+        width: 100%;
+        height: 100%;
+        li {
+            float: left;
+            height: .266667rem /* 20/75 */;
+            font-size: .32rem /* 24/75 */;
+            font-weight: bold;
+            margin-left: .2rem /* 15/75 */;
+        }
+    }
+    .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1.733333rem /* 130/75 */;
+        height: .8rem /* 60/75 */;
+        margin-top: .106667rem /* 8/75 */;
+        margin-right: .2rem /* 15/75 */;
+        border-radius: .133333rem /* 10/75 */;
+        background: linear-gradient(#ccc,#fff);
+        border: .026667rem /* 2/75 */ solid #c9c9c9;
+        font-size: .32rem /* 24/75 */;
+        font-weight: bold;
+        text-align: center;
+        line-height: .72rem /* 54/75 */;
+        box-sizing: border-box;
+    }
+}
+
+/* main */
+.d_main {
+    margin-bottom: .666667rem /* 50/75 */;
+    h2 {
+        height: 2.133333rem /* 160/75 */;
+        font-size: .426667rem /* 32/75 */;
+        text-align: center;
+        line-height: .666667rem /* 50/75 */;
+        padding: .6rem /* 45/75 */ .266667rem /* 20/75 */ 0 ;
+        color: #000;
+        font-family: '楷体';
+        box-sizing: border-box;
+    }
+    .pic {
+        position: relative;
+        height: 4.533333rem /* 340/75 */;
+        overflow: hidden;
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,-15%);
+            width: 4.533333rem /* 340/75 */;
+            // height: 2.96rem /* 222/75 */;
+        }
+        .collect {
+            position: absolute;
+            right: .64rem /* 48/75 */;
+            bottom: .533333rem /* 40/75 */;
+            width: 1.066667rem /* 80/75 */;
+            height: 1.066667rem /* 80/75 */;
+            border-radius: 50%;
+            background: #95d800;
+            text-align: center;
+            line-height: 1.066667rem /* 80/75 */;
+            font-size: .32rem /* 24/75 */;
+            color: #fff;
+        }
+    }
+    .list {
+        display: flex;
+        height: .933333rem /* 70/75 */;
+        border-top: .026667rem /* 2/75 */ solid #c05237;
+        border-bottom: .026667rem /* 2/75 */ solid #c05237;
+        box-sizing: border-box;
+        a {
+            flex: 1;
+            border-right: .026667rem /* 2/75 */ solid #c05237;
+            box-sizing: border-box;
+            font-size: .346667rem /* 26/75 */;
+            color: #fff;
+            text-align: center;
+            line-height: .88rem /* 66/75 */;
+            background: #ffca3b;
+            &:last-child {
+                border-right: none;
+            }
+            &:first-child {
+                background: #ff9d1e;
+            }
+        }
+    }
+
+    table {
+        position: relative;
+        height: 1.333333rem /* 100/75 */;
+        font-size: .266667rem /* 20/75 */;
+        overflow: hidden;
+        td:first-child img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: .16rem /* 12/75 */;
+            width: .333333rem /* 25/75 */;
+            height: .333333rem /* 25/75 */;
+        }
+        td:nth-child(2)>a {
+            position: absolute;
+            top: 50%;
+            left: .826667rem /* 62/75 */;
+            transform: translateY(-50%);
+            font-size: .4rem /* 30/75 */;
+        }
+        td:nth-child(3) {
+            position: absolute;
+            right: 2rem /* 150/75 */;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: .32rem /* 24/75 */;
+            color: red;
+        }
+        td:last-child  span {
+            position: absolute;
+            right: .053333rem /* 4/75 */;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .bz {
+        height: 1.466667rem /* 110/75 */;
+        border-top: .026667rem /* 2/75 */ solid #b2b2b2;
+        border-bottom: .106667rem /* 8/75 */ solid #616161;
+        padding: .266667rem /* 20/75 */;
+        box-sizing: border-box;
+        color: #686467;
+        font-size: .32rem /* 24/75 */;
+        line-height: .4rem /* 30/75 */;
+        margin-bottom: .053333rem /* 4/75 */;
+    }
+    .title {
+        height: .88rem /* 66/75 */;
+        background: #dbdbdb;
+        font-size: .373333rem /* 28/75 */;
+        color: #000;
+        text-align: center;
+        line-height: .88rem /* 66/75 */;
+    }
+    ul.content {
+        margin-bottom: .266667rem /* 20/75 */;
+        li{
+            width: 100%;
+            border-bottom: .026667rem /* 2/75 */ solid #c9c9c9;
+            box-sizing: border-box;
+            .up {
+                position: relative;
+                height: 1.333333rem /* 100/75 */;
+                color: #6a614f; 
+                .name {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(.266667rem /* 20/75 */,-50%);
+                    font-size: .266667rem /* 20/75 */;
+                }
+                .date {
+                    position: absolute;
+                    top: 50%;
+                    right: .306667rem /* 23/75 */;
+                    transform: translateY(-100%);
+                    font-size: .266667rem /* 20/75 */;
+                }
+                .from {
+                    position: absolute;
+                    top: 50%;
+                    right: .306667rem /* 23/75 */;
+                    transform: translateY(50%);
+                    font-size: .32rem /* 24/75 */;
+                }
+            }
+            .text {
+                line-height: .586667rem /* 44/75 */;
+                font-size: .32rem /* 24/75 */;
+                padding: .133333rem /* 10/75 */;
+                text-indent: 2em;
+                color: #000;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .t_more {
+        height: .8rem /* 60/75 */;
+        padding: 0 .213333rem /* 16/75 */;
+        box-sizing: border-box;
+        p {
+            width: 100%;
+            height: 100%;
+            border: .026667rem /* 2/75 */ solid #c9c9c9;
+            border-radius: .106667rem /* 8/75 */;
+            text-align: center;
+            line-height: .8rem /* 60/75 */;
+            font-size: .32rem /* 24/75 */;
+            font-weight: bold;
+            color: #000;
+            background: linear-gradient(#d6d6d6,#fff);
+        }
+    }
+}

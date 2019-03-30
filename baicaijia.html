@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/baicaijia.css">
+</head>
+
+<body>
+    <div class="m_layout">
+        <!-- 商品栏 -->
+        <div class="content">
+            <div class="title">
+                <a class="fa fa-angle-left" href="javascript:history.go(-1);"></a>
+                <h3>白菜价-淘宝内部价</h3>
+                <a href="#" class="bg"><img src="./images/header_app.png" alt=""></a>
+            </div>
+            <div class="navbar clearfix">
+                <ul>
+
+                </ul>
+            </div>
+            <div class="bc_main">
+                <ul class="cont clearfix">
+                    <!-- 渲染 -->
+                </ul>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+            <a href="login.html">登录</a>
+            <a href="register">注册</a>
+            <a href="#">返回顶部</a>
+        </div>
+        <div class="friendlink">
+            <a href="#">手机app下载</a>
+            <span>慢慢买手机版</span>
+            <span>--掌上比价平台</span>
+            <a>m.manmanbuy.com</a>
+        </div>
+    </div>
+    <script src="./js/setRem.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./lib/Template/template-web.js"></script>
+    <script src="./lib/IScroll/iscroll.js"></script>
+    <script src="./js/baicaijia.js"></script>
+
+    <script type="text/html" id="tpl_1">
+        {{each result v i}}
+            <li>
+                <a href="#" data-id="{{v.titleId}}">{{v.title}}</a>
+            </li>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="tpl_2">
+        {{each result v i}}
+        <li>
+            <span class="pic">
+                {{@v.productImg}}
+            </span>
+            <div class="bc_title">{{@v.productName}}</div>
+            <p class="price">{{@v.productPrice}}</p>
+            {{@v.productCouponRemain}}
+            <span class="coupon">{{@v.productCoupon}}</span>
+            <span class="href">{{@v.productHref}}</span>
+        </li>   
+    {{/each}}
+    </script>
+</body>
+
+</html>

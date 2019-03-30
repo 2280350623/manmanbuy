@@ -1,0 +1,172 @@
+/* 商品栏 */
+.content {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+.content a.fa {
+  position: absolute;
+  top: 0.266667rem /* 20/75 */;
+  left: 0.266667rem /* 20/75 */;
+  font-size: 0.666667rem /* 50/75 */;
+}
+.content .title {
+  position: relative;
+  width: 100%;
+  height: 1.2rem /* 90/75 */;
+  background: #f4483e;
+  padding: 0.146667rem /* 11/75 */ 0.213333rem /* 16/75 */;
+  box-sizing: border-box;
+}
+.content .title h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.506667rem /* 38/75 */;
+  font-weight: bold;
+}
+.content .title a.bg img {
+  position: absolute;
+  top: 50%;
+  right: 0.133333rem /* 10/75 */;
+  transform: translateY(-50%);
+  width: 0.933333rem /* 70/75 */;
+  height: 0.933333rem /* 70/75 */;
+}
+.content .navbar ul li {
+  float: left;
+  line-height: 1.066667rem /* 80/75 */;
+}
+.content .navbar ul li a {
+  display: block;
+  height: 1.066667rem /* 80/75 */;
+  margin: 0 0.32rem /* 24/75 */;
+  font-size: 0.32rem /* 24/75 */;
+  box-sizing: border-box;
+}
+.content .navbar ul li:first-child a {
+  border-bottom: 0.04rem /* 3/75 */ solid #d90000;
+}
+.content .bc_main {
+  border-bottom: 0.8rem /* 60/75 */ solid #f7f7f7;
+  box-sizing: border-box;
+}
+.content .bc_main ul.cont li {
+  position: relative;
+  display: block;
+  height: 4.133333rem /* 310/75 */;
+  border-top: 0.133333rem /* 10/75 */ solid #f8f8f8;
+  padding: 0.266667rem /* 20/75 */ 0.133333rem /* 10/75 */;
+  box-sizing: border-box;
+}
+.content .bc_main ul.cont li .pic {
+  position: absolute;
+  left: 0;
+  width: 3.466667rem /* 260/75 */;
+  height: 3.466667rem /* 260/75 */;
+}
+.content .bc_main ul.cont li .pic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.content .bc_main ul.cont li .bc_title {
+  position: absolute;
+  top: 0.333333rem /* 25/75 */;
+  left: 3.6rem /* 270/75 */;
+  width: 6rem /* 450/75 */;
+  font-size: 0.346667rem /* 26/75 */;
+  font-weight: bold;
+  color: #000;
+  line-height: 0.466667rem /* 35/75 */;
+}
+.content .bc_main ul.cont li p.price {
+  position: absolute;
+  top: 1.6rem /* 120/75 */;
+  left: 3.6rem /* 270/75 */;
+  width: 6rem /* 450/75 */;
+  height: 0.466667rem /* 35/75 */;
+  font-size: 0.466667rem /* 35/75 */;
+  color: #fd090a;
+}
+.content .bc_main ul.cont li p.price i {
+  font-size: 0.4rem /* 30/75 */;
+  padding: 0 0.066667rem /* 5/75 */;
+}
+.content .bc_main ul.cont li p.price em {
+  font-size: 0.266667rem /* 20/75 */;
+}
+.content .bc_main ul.cont li p.price del {
+  font-size: 0.266667rem /* 20/75 */;
+  color: #acadb4;
+  padding-left: 0.2rem /* 15/75 */;
+}
+.content .bc_main ul.cont li div.bar {
+  position: absolute;
+  top: 2.2rem /* 165/75 */;
+  left: 3.6rem /* 270/75 */;
+  font-size: 0.346667rem /* 26/75 */;
+  color: #fd090a;
+}
+.content .bc_main ul.cont li div.bar i {
+  position: relative;
+  display: inline-block;
+  width: 2.213333rem /* 166/75 */;
+  height: 0.373333rem /* 28/75 */;
+  border: 0.026667rem /* 2/75 */ solid #fd090a;
+  border-radius: 0.186667rem /* 14/75 */;
+  margin-right: 0.133333rem /* 10/75 */;
+  background: #ffb7b7;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .bc_main ul.cont li div.bar i em {
+  display: inline-block;
+  height: 100%;
+  background: #fd090a;
+}
+.content .bc_main ul.cont li div.bar i span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.32rem /* 24/75 */;
+  color: #fff;
+}
+.content .bc_main ul.cont li div.bar b {
+  vertical-align: 16%;
+}
+.content .bc_main ul.cont li .coupon {
+  position: absolute;
+  top: 3rem /* 225/75 */;
+  left: 3.6rem /* 270/75 */;
+  width: 2.906667rem /* 218/75 */;
+  height: 0.72rem /* 54/75 */;
+  border: 0.026667rem /* 2/75 */ dashed #ee8183;
+  text-align: center;
+  line-height: 0.666667rem /* 50/75 */;
+  box-sizing: border-box;
+}
+.content .bc_main ul.cont li .coupon a {
+  font-size: 0.293333rem /* 22/75 */;
+  color: #e22d31;
+}
+.content .bc_main ul.cont li .href {
+  position: absolute;
+  top: 3rem /* 225/75 */;
+  right: 0;
+  width: 1.546667rem /* 116/75 */;
+  height: 0.746667rem /* 56/75 */;
+  border: 0.026667rem /* 2/75 */ solid #ff4241;
+  background: #ff5759;
+  text-align: center;
+  line-height: 0.693333rem /* 52/75 */;
+  box-sizing: border-box;
+}
+.content .bc_main ul.cont li .href a {
+  font-size: 0.32rem /* 24/75 */;
+  font-weight: bold;
+  color: #fff;
+}

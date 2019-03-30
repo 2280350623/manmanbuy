@@ -1,0 +1,116 @@
+/* 商品栏 */
+.content {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  margin-bottom: 0.266667rem /* 20/75 */;
+}
+.content a.fa {
+  position: absolute;
+  top: 0.266667rem /* 20/75 */;
+  left: 0.266667rem /* 20/75 */;
+  font-size: 0.666667rem /* 50/75 */;
+}
+.content .title {
+  position: relative;
+  width: 100%;
+  height: 1.2rem /* 90/75 */;
+  background-image: linear-gradient(#ffaf47, #ff9000);
+  padding: 0.146667rem /* 11/75 */ 0.213333rem /* 16/75 */;
+  box-sizing: border-box;
+}
+.content .title h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.506667rem /* 38/75 */;
+  font-weight: bold;
+}
+.content .title a.bg img {
+  position: absolute;
+  top: 50%;
+  right: 0.133333rem /* 10/75 */;
+  transform: translateY(-50%);
+  width: 0.933333rem /* 70/75 */;
+  height: 0.933333rem /* 70/75 */;
+}
+.content .cou_products {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.266667rem /* 20/75 */;
+}
+.content .cou_products li a {
+  flex: 1;
+  width: 100%;
+  height: 3.466667rem /* 260/75 */;
+  border-bottom: 0.026667rem /* 2/75 */ solid #e7e7e7;
+  padding: 0.4rem /* 30/75 */ 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+.content .cou_products li a .left {
+  flex: 1;
+  text-align: center;
+}
+.content .cou_products li a .left img {
+  width: 80%;
+}
+.content .cou_products li a .right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.content .cou_products li a .right p:first-child {
+  flex: 1;
+  padding-right: 0.2rem /* 15/75 */;
+  box-sizing: border-box;
+}
+.content .cou_products li a .right p:first-child .name {
+  line-height: 0.506667rem /* 38/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+}
+.content .cou_products li a .right p:first-child .price {
+  display: block;
+  line-height: 0.506667rem /* 38/75 */;
+  font-size: 0.373333rem /* 28/75 */;
+  font-weight: bold;
+  color: #000;
+}
+.content .cou_products li a .right .from {
+  flex: 1;
+  color: #f08020;
+  font-size: 0.293333rem /* 22/75 */;
+  line-height: 0.56rem /* 42/75 */;
+  box-sizing: border-box;
+}
+.lunbo {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.lunbo .return {
+  position: fixed;
+  top: 0.4rem /* 30/75 */;
+  right: 0.4rem /* 30/75 */;
+  font-size: 1.333333rem /* 100/75 */;
+  color: #000;
+}
+.lunbo .swiper-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.lunbo .swiper-container img {
+  display: block;
+  margin: 0 auto;
+  width: 2.666667rem /* 200/75 */;
+  height: 2.666667rem /* 200/75 */;
+}
